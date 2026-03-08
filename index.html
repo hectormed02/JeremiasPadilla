@@ -32,7 +32,8 @@
     </script>
     <style>
         .hero-bg {
-            background-image: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.9)), url('baner.png');
+            /* Se redujo la opacidad del color oscuro (de 0.8 a 0.2 y 0.9 a 0.5) para que la imagen sea más visible */
+            background-image: linear-gradient(rgba(30, 41, 59, 0.2), rgba(30, 41, 59, 0.5)), url('baner.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -77,9 +78,9 @@
     <!-- Hero Section -->
     <header id="inicio" class="hero-bg min-h-screen flex items-center justify-center text-center pt-20">
         <div class="container mx-auto px-4 text-white">
-            <h2 class="text-brand-green font-bold tracking-widest uppercase mb-2">Soluciones Deportivas e Industriales</h2>
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Infraestructura de<br>Alta Calidad</h1>
-            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 text-gray-300">
+            <h2 class="text-brand-green font-bold tracking-widest uppercase mb-2 drop-shadow-md">Soluciones Deportivas e Industriales</h2>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-lg">Infraestructura de<br>Alta Calidad</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 text-gray-100 font-medium drop-shadow-md">
                 Diseñamos, construimos y asesoramos permanentemente para poner en marcha su proyecto deportivo e industrial. Calidad y garantía que sólo Padilla Deportes ofrece.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
