@@ -39,10 +39,11 @@
     <style>
         .hero-bg {
             background-color: #1e40af;
-            /* Gradiente azul vibrante a la izquierda que se desvanece para mostrar la foto a la derecha */
-            background-image: linear-gradient(to right, rgba(30, 64, 175, 0.95) 0%, rgba(30, 64, 175, 0.8) 40%, rgba(30, 64, 175, 0.15) 100%), url('baner.png');
+            /* Se eliminó el gradiente oscuro para que el equipo en la foto resalte con sus colores reales al 100% */
+            background-image: url('baner.png');
             background-size: cover;
-            background-position: center;
+            /* Posición ajustada hacia abajo (bottom) para asegurar que las personas en la pista no se corten */
+            background-position: center bottom;
             background-repeat: no-repeat;
             background-attachment: scroll; 
         }
@@ -85,23 +86,24 @@
 
     <!-- Hero Section -->
     <header id="inicio" class="hero-bg min-h-[100vh] flex items-center pt-24 pb-12">
-        <div class="container mx-auto px-6">
-            <div class="max-w-2xl text-left">
+        <div class="container mx-auto px-6 relative z-10">
+            <!-- Contenedor con efecto cristal (Glassmorphism) para agrupar el texto sin tapar a las personas -->
+            <div class="max-w-xl text-left bg-slate-900/40 backdrop-blur-md p-8 md:p-10 rounded-[2.5rem] border border-white/20 shadow-2xl mt-10 md:mt-0">
                 <div class="inline-block border border-brand-green/40 bg-brand-green/15 backdrop-blur-sm px-4 py-1.5 rounded-full mb-6">
                     <h2 class="text-brand-green font-semibold text-sm tracking-wider uppercase drop-shadow-sm">Soluciones Deportivas e Industriales</h2>
                 </div>
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight text-white tracking-tight drop-shadow-md">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-white tracking-tight drop-shadow-md">
                     Infraestructura de<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200">Alta Calidad</span>
                 </h1>
-                <p class="text-lg md:text-xl mb-10 text-blue-50 font-light leading-relaxed max-w-xl drop-shadow-sm">
+                <p class="text-lg md:text-xl mb-8 text-blue-50 font-light leading-relaxed drop-shadow-sm">
                     Diseñamos, construimos y asesoramos permanentemente para poner en marcha su proyecto. Calidad y garantía que sólo Padilla Deportes ofrece.
                 </p>
                 <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="https://wa.me/51979972518" target="_blank" class="bg-brand-green hover:bg-emerald-400 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center space-x-3 w-full sm:w-auto justify-center shadow-lg shadow-brand-green/30 hover:-translate-y-1">
+                    <a href="https://wa.me/51979972518" target="_blank" class="bg-brand-green hover:bg-emerald-400 text-white px-6 py-4 rounded-xl font-semibold text-base transition-all duration-300 flex items-center space-x-3 w-full sm:w-auto justify-center shadow-lg shadow-brand-green/30 hover:-translate-y-1">
                         <i class="fa-brands fa-whatsapp text-2xl"></i>
                         <span>Cotizar por WhatsApp</span>
                     </a>
-                    <a href="#contacto" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 w-full sm:w-auto justify-center flex hover:-translate-y-1 shadow-lg">
+                    <a href="#contacto" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-4 rounded-xl font-semibold text-base transition-all duration-300 w-full sm:w-auto justify-center flex hover:-translate-y-1 shadow-lg">
                         Contáctenos
                     </a>
                 </div>
