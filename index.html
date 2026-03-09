@@ -34,8 +34,8 @@
         .hero-bg {
             /* Color de respaldo oscuro mientras carga la imagen */
             background-color: #1e293b;
-            /* Se redujo la opacidad del color oscuro para que la imagen sea más visible */
-            background-image: linear-gradient(rgba(30, 41, 59, 0.3), rgba(30, 41, 59, 0.6)), url('baner.png');
+            /* Gradiente oscuro a la izquierda (para el texto) que se vuelve transparente a la derecha (para la foto) */
+            background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 40%, rgba(15, 23, 42, 0.1) 100%), url('baner.jpg');
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -80,21 +80,23 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="inicio" class="hero-bg min-h-screen flex items-center justify-center text-center pt-20">
-        <div class="container mx-auto px-4 text-white">
-            <h2 class="text-brand-green font-bold tracking-widest uppercase mb-2 drop-shadow-md">Soluciones Deportivas e Industriales</h2>
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-lg">Infraestructura de<br>Alta Calidad</h1>
-            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 text-gray-100 font-medium drop-shadow-md">
-                Diseñamos, construimos y asesoramos permanentemente para poner en marcha su proyecto deportivo e industrial. Calidad y garantía que sólo Padilla Deportes ofrece.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="https://wa.me/51979972518" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition flex items-center space-x-3 w-full sm:w-auto justify-center shadow-lg shadow-green-500/30">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i>
-                    <span>Cotizar por WhatsApp</span>
-                </a>
-                <a href="#contacto" class="bg-transparent border-2 border-white hover:bg-white hover:text-brand-dark text-white px-8 py-4 rounded-full font-bold text-lg transition w-full sm:w-auto justify-center flex">
-                    Contáctenos
-                </a>
+    <header id="inicio" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl text-left">
+                <h2 class="text-brand-green font-bold tracking-widest uppercase mb-4 drop-shadow-md">Soluciones Deportivas e Industriales</h2>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight text-white drop-shadow-lg">Infraestructura de<br>Alta Calidad</h1>
+                <p class="text-lg md:text-xl mb-10 text-gray-200 font-medium drop-shadow-md leading-relaxed">
+                    Diseñamos, construimos y asesoramos permanentemente para poner en marcha su proyecto deportivo e industrial. Calidad y garantía que sólo Padilla Deportes ofrece.
+                </p>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://wa.me/51979972518" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition flex items-center space-x-3 w-full sm:w-auto justify-center shadow-lg shadow-green-500/30">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Cotizar por WhatsApp</span>
+                    </a>
+                    <a href="#contacto" class="bg-transparent border-2 border-white hover:bg-white hover:text-brand-dark text-white px-8 py-4 rounded-full font-bold text-lg transition w-full sm:w-auto justify-center flex">
+                        Contáctenos
+                    </a>
+                </div>
             </div>
         </div>
     </header>
