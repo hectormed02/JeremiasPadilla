@@ -32,11 +32,15 @@
     </script>
     <style>
         .hero-bg {
-            /* Se redujo la opacidad del color oscuro (de 0.8 a 0.2 y 0.9 a 0.5) para que la imagen sea más visible */
-            background-image: linear-gradient(rgba(30, 41, 59, 0.2), rgba(30, 41, 59, 0.5)), url('baner.png');
+            /* Color de respaldo oscuro mientras carga la imagen */
+            background-color: #1e293b;
+            /* Se redujo la opacidad del color oscuro para que la imagen sea más visible */
+            background-image: linear-gradient(rgba(30, 41, 59, 0.3), rgba(30, 41, 59, 0.6)), url('baner.png');
             background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-position: center center;
+            background-repeat: no-repeat;
+            /* Forzar comportamiento normal para evitar el bug de iOS/Safari en móviles */
+            background-attachment: scroll; 
         }
         .floor-bg {
             background-image: linear-gradient(rgba(241, 245, 249, 0.95), rgba(241, 245, 249, 0.95)), url('https://images.unsplash.com/photo-1580981433608-f19ea8189c4b?q=80&w=2070&auto=format&fit=crop');
