@@ -70,6 +70,16 @@
         .clip-path-slant {
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
+        /* Prevenir selección y arrastre de imágenes nativo */
+        img {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-select: none;
+            -webkit-user-select: none;
+            pointer-events: none; /* Desactiva interacción con la imagen */
+        }
     </style>
 </head>
 <body class="font-sans text-slate-700 antialiased bg-slate-50 selection:bg-brand-blue selection:text-white">
@@ -173,8 +183,8 @@
         <div class="hero-overlay"></div>
         
         <div class="container mx-auto px-6 relative z-10 flex justify-end">
-            <!-- Texto Principal: Ancho reducido (540px) y limitado a la mitad de la pantalla (lg:w-1/2) -->
-            <div class="w-full lg:w-1/2 max-w-[540px] text-left bg-[#0f1523] p-8 md:p-10 rounded-[2rem] border border-slate-800/80 shadow-2xl mt-20 md:mt-0">
+            <!-- Texto Principal: Tarjeta ahora es transparente (bg-opacity-40 y backdrop-blur-md) para dejar ver el fondo -->
+            <div class="w-full lg:w-1/2 max-w-[540px] text-left bg-[#0f1523]/40 backdrop-blur-md p-8 md:p-10 rounded-[2rem] border border-white/10 shadow-2xl mt-20 md:mt-0">
                 <div class="inline-flex items-center gap-2 border border-brand-green/20 bg-brand-green/10 px-4 py-1.5 rounded-full mb-6">
                     <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-green"></span>
                     <h2 class="text-brand-green font-bold text-[10px] md:text-xs tracking-widest uppercase">Líderes en Soluciones Deportivas</h2>
@@ -669,6 +679,22 @@
                     link.classList.remove("text-white/90");
                 }
             });
+        });
+
+        // --- SEGURIDAD DE IMÁGENES ---
+        // Prevenir clic derecho en toda la página (opcional, enfocado a imágenes y fondos)
+        document.addEventListener('contextmenu', function(e) {
+            // Si hacen clic derecho en una imagen o en el fondo del banner, se bloquea
+            if (e.target.tagName === 'IMG' || e.target.classList.contains('hero-bg') || e.target.closest('.hero-bg')) {
+                e.preventDefault();
+            }
+        });
+
+        // Prevenir arrastrar y soltar
+        document.addEventListener('dragstart', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
         });
     </script>
 </body>
