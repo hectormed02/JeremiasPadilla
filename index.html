@@ -183,8 +183,8 @@
         <div class="hero-overlay"></div>
         
         <div class="container mx-auto px-6 relative z-10 flex justify-end">
-            <!-- Texto Principal: Tarjeta ahora es transparente (bg-opacity-40 y backdrop-blur-md) para dejar ver el fondo -->
-            <div class="w-full lg:w-1/2 max-w-[540px] text-left bg-[#0f1523]/40 backdrop-blur-md p-8 md:p-10 rounded-[2rem] border border-white/10 shadow-2xl mt-20 md:mt-0">
+            <!-- Texto Principal: Fondo mucho más transparente (20% opacidad) y mayor desenfoque (backdrop-blur-lg) -->
+            <div class="w-full lg:w-1/2 max-w-[540px] text-left bg-slate-900/20 backdrop-blur-lg p-8 md:p-10 rounded-[2rem] border border-white/20 shadow-2xl mt-20 md:mt-0">
                 <div class="inline-flex items-center gap-2 border border-brand-green/20 bg-brand-green/10 px-4 py-1.5 rounded-full mb-6">
                     <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-green"></span>
                     <h2 class="text-brand-green font-bold text-[10px] md:text-xs tracking-widest uppercase">Líderes en Soluciones Deportivas</h2>
@@ -297,183 +297,51 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Superficies Card -->
-                <div class="bg-slate-50 rounded-3xl shadow-soft border border-slate-100 overflow-hidden hover:-translate-y-2 transition-transform duration-300 flex flex-col group">
-                    <div class="h-56 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1518605368461-1ee0616b41d0?q=80&w=2000&auto=format&fit=crop" alt="Superficies Deportivas" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 to-transparent"></div>
-                        <h4 class="absolute bottom-6 left-6 text-white text-2xl font-bold">Superficies<br>de Alta Gama</h4>
-                    </div>
-                    <div class="p-8 flex-1">
-                        <ul class="space-y-3 text-slate-600 font-light">
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span> Pasto Artificial</li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span> Losetas de Polipropileno</li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span> Resinas de Poliuretano y Acrílicas</li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span> Vinílicos y Madera</li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span> Pistas Atléticas</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Mantenimiento Card -->
-                <div class="bg-slate-50 rounded-3xl shadow-soft border border-slate-100 overflow-hidden hover:-translate-y-2 transition-transform duration-300 flex flex-col group">
-                    <div class="h-56 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=2000&auto=format&fit=crop" alt="Mantenimiento Deportivo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 to-transparent"></div>
-                        <h4 class="absolute bottom-6 left-6 text-white text-2xl font-bold">Mantenimiento<br>e Insumos</h4>
-                    </div>
-                    <div class="p-8 flex-1">
-                        <p class="text-slate-600 font-light mb-6">Vital para la buena gestión y el correcto funcionamiento de un área deportiva o recreativa.</p>
-                        <div class="bg-blue-50/60 p-4 rounded-xl border border-blue-100/60">
-                            <p class="text-sm text-brand-dark font-medium"><i class="fa-solid fa-chart-line text-brand-blue mr-2"></i> Reduce costes a largo plazo y aumenta la durabilidad de su instalación.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Asesoría Card -->
-                <div class="bg-brand-dark rounded-3xl shadow-soft overflow-hidden hover:-translate-y-2 transition-transform duration-300 flex flex-col text-white group">
-                    <div class="h-56 relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1503945438517-f65904a52ce6?q=80&w=2000&auto=format&fit=crop" alt="Diseño de Proyectos" class="w-full h-full object-cover opacity-50 mix-blend-overlay grayscale transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-brand-blue/20"></div>
-                        <h4 class="absolute bottom-6 left-6 text-white text-2xl font-bold">Diseño y<br>Asesoramiento</h4>
-                    </div>
-                    <div class="p-8 flex-1 flex flex-col justify-between">
-                        <p class="text-slate-300 font-light mb-6">Equipamos áreas públicas y privadas atractivas para el usuario, incentivando una cultura sana y deportiva.</p>
-                        <a href="#contacto" class="inline-flex items-center text-emerald-400 font-semibold hover:text-white transition-colors group">
-                            Consulte a un experto 
-                            <i class="fa-solid fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pisos Industriales Section -->
-    <section id="pisos" class="py-24 floor-bg relative">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="bg-white/95 backdrop-blur-md rounded-[2.5rem] shadow-xl p-8 md:p-16 border border-white">
-                <div class="text-center mb-16 max-w-3xl mx-auto">
-                    <h3 class="text-brand-blue font-bold text-sm uppercase tracking-widest mb-3">Alta Durabilidad</h3>
-                    <h2 class="text-3xl md:text-5xl font-extrabold mb-6 text-brand-dark tracking-tight">Sistemas de Pisos Industriales</h2>
-                    <p class="text-lg text-slate-600 font-light">
-                        Resinas (epóxica, poliuretano, uretano-cemento) y agregados seleccionados que garantizan un comportamiento superior en condiciones severas.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 mb-16">
-                    <!-- Features -->
-                    <div class="flex gap-4 group">
-                        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center shrink-0 shadow-sm text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-hammer text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold mb-2 text-brand-dark group-hover:text-brand-blue transition-colors duration-300">Mecánica</h4>
-                            <p class="text-slate-600 text-sm font-light leading-relaxed">Excelente resistencia al desgaste por abrasión e impacto por tránsito intenso.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4 group">
-                        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center shrink-0 shadow-sm text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-flask text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold mb-2 text-brand-dark group-hover:text-brand-blue transition-colors duration-300">Química</h4>
-                            <p class="text-slate-600 text-sm font-light leading-relaxed">Protección contra sales, aceites, grasas, disolventes y líquidos corrosivos.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4 group">
-                        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center shrink-0 shadow-sm text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-temperature-arrow-up text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold mb-2 text-brand-dark group-hover:text-brand-blue transition-colors duration-300">Térmica</h4>
-                            <p class="text-slate-600 text-sm font-light leading-relaxed">Soportan desde -40°C hasta 120°C y resisten el shock térmico a 9mm.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4 group">
-                        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center shrink-0 shadow-sm text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-sparkles text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold mb-2 text-brand-dark group-hover:text-brand-blue transition-colors duration-300">Higiene</h4>
-                            <p class="text-slate-600 text-sm font-light leading-relaxed">Superficie sanitaria sin crecimiento microbiano, ideal para la industria alimentaria.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4 group">
-                        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center shrink-0 shadow-sm text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-shoe-prints text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold mb-2 text-brand-dark group-hover:text-brand-blue transition-colors duration-300">Antideslizante</h4>
-                            <p class="text-slate-600 text-sm font-light leading-relaxed">Diseñados para procesos húmedos y secos garantizando seguridad.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4 group">
-                        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center shrink-0 shadow-sm text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors duration-300">
-                            <i class="fa-solid fa-stopwatch text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-bold mb-2 text-brand-dark group-hover:text-brand-blue transition-colors duration-300">Rápida Instalación</h4>
-                            <p class="text-slate-600 text-sm font-light leading-relaxed">Uso habilitado 24h después de instalado, asegurando mínima parada de planta.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Usos Recomendados -->
-                <div class="bg-slate-50 border border-slate-100 rounded-3xl p-8 md:p-10">
-                    <h4 class="text-lg font-bold mb-6 flex items-center gap-3 text-brand-dark"><i class="fa-solid fa-industry text-brand-blue"></i> Aplicaciones Recomendadas</h4>
-                    <div class="flex flex-wrap gap-2.5">
-                        <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:border-brand-blue hover:text-brand-blue transition-colors cursor-default">Proceso de alimentos</span>
-                        <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:border-brand-blue hover:text-brand-blue transition-colors cursor-default">Cámaras Frías</span>
-                        <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:border-brand-blue hover:text-brand-blue transition-colors cursor-default">Túneles de Congelado</span>
-                        <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:border-brand-blue hover:text-brand-blue transition-colors cursor-default">Producción y Maquila</span>
-                        <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:border-brand-blue hover:text-brand-blue transition-colors cursor-default">Almacenamiento</span>
-                        <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:border-brand-blue hover:text-brand-blue transition-colors cursor-default">Envasado y embotellado</span>
-                        <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:border-brand-blue hover:text-brand-blue transition-colors cursor-default">Laboratorios</span>
-                        <span class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:border-brand-blue hover:text-brand-blue transition-colors cursor-default">Talleres de mantenimiento</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Proyectos Section -->
-    <section id="proyectos" class="py-24 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h3 class="text-brand-orange font-bold text-sm uppercase tracking-widest mb-3">Portafolio</h3>
-                <h2 class="text-3xl md:text-5xl font-extrabold mb-6 text-brand-dark tracking-tight">Proyectos Destacados</h2>
-                <p class="text-slate-600 font-light text-lg">Infraestructura implementada con éxito, garantizando la más alta calidad y durabilidad en cada metro cuadrado.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="rounded-3xl overflow-hidden shadow-soft group cursor-pointer relative aspect-[4/3]">
-                    <img src="P1.png" onerror="this.onerror=null; this.src='https://placehold.co/800x600/e2e8f0/0f172a?text=Proyecto+1'" alt="Losa Deportiva Multiusos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <!-- Ñawpaq kaq proyecto (Project 1) -->
+                <div onclick="openGallery('proyecto1')" class="rounded-3xl overflow-hidden shadow-soft group cursor-pointer relative aspect-[4/3]">
+                    <img src="iepnsl-1.png" onerror="this.onerror=null; this.src='https://placehold.co/800x600/e2e8f0/0f172a?text=I.E.P.+NUESTRA+SEÑORA+DE+LOURDES'" alt="I.E.P. NUESTRA SEÑORA DE LOURDES" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    
+                    <!-- Álbum qhawanapaq (Indicador de Álbum) -->
+                    <div class="absolute top-4 right-4 bg-black/40 backdrop-blur-md text-white px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-2 border border-white/20">
+                        <i class="fa-regular fa-images"></i> <span>Ver Álbum</span>
+                    </div>
+
                     <div class="absolute inset-0 flex flex-col justify-end p-8">
-                        <h4 class="text-white font-bold text-2xl mb-1">Losa Multiusos</h4>
-                        <p class="text-emerald-400 font-medium text-sm">Piso deportivo de alta resistencia</p>
+                        <h4 class="text-white font-bold text-2xl mb-1 group-hover:text-emerald-400 transition-colors">I.E.P. NUESTRA SEÑORA DE LOURDES</h4>
+                        <p class="text-emerald-400/80 font-medium text-sm">Piso deportivo de alta resistencia</p>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="rounded-3xl overflow-hidden shadow-soft group cursor-pointer relative aspect-[4/3]">
+                <div onclick="openGallery('proyecto2')" class="rounded-3xl overflow-hidden shadow-soft group cursor-pointer relative aspect-[4/3]">
                     <img src="https://images.unsplash.com/photo-1580981433608-f19ea8189c4b?q=80&w=800&auto=format&fit=crop" alt="Planta Industrial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    
+                    <!-- Indicador de Álbum -->
+                    <div class="absolute top-4 right-4 bg-black/40 backdrop-blur-md text-white px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-2 border border-white/20">
+                        <i class="fa-regular fa-images"></i> <span>Ver Álbum</span>
+                    </div>
+
                     <div class="absolute inset-0 flex flex-col justify-end p-8">
-                        <h4 class="text-white font-bold text-2xl mb-1">Planta Industrial</h4>
-                        <p class="text-emerald-400 font-medium text-sm">Recubrimiento epóxico antideslizante</p>
+                        <h4 class="text-white font-bold text-2xl mb-1 group-hover:text-emerald-400 transition-colors">Planta Industrial</h4>
+                        <p class="text-emerald-400/80 font-medium text-sm">Recubrimiento epóxico antideslizante</p>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="rounded-3xl overflow-hidden shadow-soft group cursor-pointer relative aspect-[4/3]">
+                <div onclick="openGallery('proyecto3')" class="rounded-3xl overflow-hidden shadow-soft group cursor-pointer relative aspect-[4/3]">
                     <img src="https://images.unsplash.com/photo-1518605368461-1ee0616b41d0?q=80&w=800&auto=format&fit=crop" alt="Pista Atlética" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    
+                    <!-- Indicador de Álbum -->
+                    <div class="absolute top-4 right-4 bg-black/40 backdrop-blur-md text-white px-3 py-1.5 rounded-full text-xs font-bold flex items-center gap-2 border border-white/20">
+                        <i class="fa-regular fa-images"></i> <span>Ver Álbum</span>
+                    </div>
+
                     <div class="absolute inset-0 flex flex-col justify-end p-8">
-                        <h4 class="text-white font-bold text-2xl mb-1">Pista Atlética</h4>
-                        <p class="text-emerald-400 font-medium text-sm">Resina de poliuretano profesional</p>
+                        <h4 class="text-white font-bold text-2xl mb-1 group-hover:text-emerald-400 transition-colors">Pista Atlética</h4>
+                        <p class="text-emerald-400/80 font-medium text-sm">Resina de poliuretano profesional</p>
                     </div>
                 </div>
             </div>
@@ -587,6 +455,32 @@
         </div>
     </footer>
 
+    <!-- Contenedor del Lightbox / Galería (Oculto por defecto) -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-black/95 hidden flex-col justify-center items-center opacity-0 transition-opacity duration-300 backdrop-blur-sm">
+        <!-- Botón Cerrar -->
+        <button onclick="closeGallery()" class="absolute top-6 right-6 md:top-10 md:right-10 text-white/70 hover:text-white text-5xl z-50 focus:outline-none transition-colors">&times;</button>
+        
+        <!-- Controles de Navegación Izquierda -->
+        <button onclick="prevImage(event)" class="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 text-white/70 hover:text-emerald-400 text-4xl z-50 focus:outline-none p-4 transition-colors">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        
+        <!-- Contenedor de la Imagen y Título -->
+        <div class="relative w-full max-w-5xl px-4 md:px-24 flex flex-col justify-center items-center h-[85vh]">
+            <img id="lightbox-img" src="" alt="Vista de Galería" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl transition-transform duration-300 scale-95 select-none">
+            
+            <div class="absolute bottom-[-50px] left-0 w-full text-center text-white/90 tracking-wide bg-gradient-to-t from-black/80 to-transparent p-4 rounded-b-xl">
+                <span id="lightbox-counter" class="font-bold text-emerald-400 mr-2"></span> 
+                <span id="lightbox-caption" class="font-light"></span>
+            </div>
+        </div>
+
+        <!-- Controles de Navegación Derecha -->
+        <button onclick="nextImage(event)" class="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 text-white/70 hover:text-emerald-400 text-4xl z-50 focus:outline-none p-4 transition-colors">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
     <script>
         // Actualizar el año del footer automáticamente
         document.getElementById('year').textContent = new Date().getFullYear();
@@ -679,6 +573,97 @@
                     link.classList.remove("text-white/90");
                 }
             });
+        });
+
+        // --- LÓGICA DE GALERÍA (LIGHTBOX) ---
+        // Base de datos de imágenes para cada proyecto (Aquí configuras las imágenes del álbum)
+        const projectGalleries = {
+            'proyecto1': [
+                { src: 'iepnsl-1.png', caption: 'I.E.P. NUESTRA SEÑORA DE LOURDES - 1' },
+                { src: 'iepnsl-2.png', caption: 'I.E.P. NUESTRA SEÑORA DE LOURDES - 2' },
+                { src: 'iepnsl-3.png', caption: 'I.E.P. NUESTRA SEÑORA DE LOURDES - 3' },
+                { src: 'iepnsl-4.png', caption: 'I.E.P. NUESTRA SEÑORA DE LOURDES - 4' }
+            ],
+            'proyecto2': [
+                { src: 'https://images.unsplash.com/photo-1580981433608-f19ea8189c4b?q=80&w=1000&auto=format&fit=crop', caption: 'Planta Industrial - Área Principal' },
+                { src: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=1000&auto=format&fit=crop', caption: 'Planta Industrial - Pasillos con recubrimiento epóxico' }
+            ],
+            'proyecto3': [
+                { src: 'https://images.unsplash.com/photo-1518605368461-1ee0616b41d0?q=80&w=1000&auto=format&fit=crop', caption: 'Pista Atlética - Carriles Profesionales' },
+                { src: 'https://images.unsplash.com/photo-1503945438517-f65904a52ce6?q=80&w=1000&auto=format&fit=crop', caption: 'Pista Atlética - Resina de poliuretano' }
+            ]
+        };
+
+        let currentGalleryData = [];
+        let currentImageIndex = 0;
+        const lightboxEl = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCounter = document.getElementById('lightbox-counter');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+
+        function openGallery(projectId) {
+            currentGalleryData = projectGalleries[projectId];
+            currentImageIndex = 0;
+            updateGalleryUI();
+            
+            // Mostrar modal
+            lightboxEl.classList.remove('hidden');
+            lightboxEl.classList.add('flex');
+            document.body.style.overflow = 'hidden'; // Evitar scroll de fondo
+            
+            // Animación de entrada
+            setTimeout(() => {
+                lightboxEl.classList.remove('opacity-0');
+                lightboxImg.classList.remove('scale-95');
+                lightboxImg.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeGallery() {
+            // Animación de salida
+            lightboxEl.classList.add('opacity-0');
+            lightboxImg.classList.remove('scale-100');
+            lightboxImg.classList.add('scale-95');
+            
+            setTimeout(() => {
+                lightboxEl.classList.add('hidden');
+                lightboxEl.classList.remove('flex');
+                document.body.style.overflow = ''; // Restaurar scroll
+            }, 300);
+        }
+
+        function updateGalleryUI() {
+            lightboxImg.src = currentGalleryData[currentImageIndex].src;
+            lightboxCaption.textContent = currentGalleryData[currentImageIndex].caption;
+            lightboxCounter.textContent = `${currentImageIndex + 1} / ${currentGalleryData.length}`;
+        }
+
+        function nextImage(event) {
+            if(event) event.stopPropagation(); // Evitar cerrar al hacer clic en flechas
+            currentImageIndex = (currentImageIndex + 1) % currentGalleryData.length;
+            updateGalleryUI();
+        }
+
+        function prevImage(event) {
+            if(event) event.stopPropagation();
+            currentImageIndex = (currentImageIndex - 1 + currentGalleryData.length) % currentGalleryData.length;
+            updateGalleryUI();
+        }
+
+        // Cerrar al hacer clic fuera de la imagen (en el fondo oscuro)
+        lightboxEl.addEventListener('click', function(e) {
+            if (e.target === lightboxEl) {
+                closeGallery();
+            }
+        });
+
+        // Controles de teclado para la galería
+        document.addEventListener('keydown', (e) => {
+            if (!lightboxEl.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeGallery();
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+            }
         });
 
         // --- SEGURIDAD DE IMÁGENES ---
